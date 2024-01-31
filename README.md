@@ -1,7 +1,12 @@
 # information-retrieval-aspect
-An idea of Artela Hackthon
-# Project Background
-In today's digital era, membership schemes are often seen as an investment by users for more services and conveniences. However, this model usually exists within centralized platforms, meaning ownership and control remain in the hands of the service providers. Our project is inspired by the transformation of membership schemes into a real asset owned by users. Through blockchain technology, we aim to return the ownership and control of assets back to the users themselves.
+An idea of Artela aspect use case.
+## Project Background
+### 会员资产化与数据去中心化
+受到会员模式的启发，我们将会员资格视为用户购买的一种资产，其价值在于能够获取更多服务。在传统APP模式中，会员数据多存储于中心化的服务器，我们的目标是颠覆这一模式，将资产的所有权和数据的控制权交还给用户，确保其自主性和安全性。
+
+### 资产多样化与Web2的局限性
+我们追求的不仅是会员NFT，还包括用户的其他资产，如文章、音乐、图片、视频等。这些资产的所有权也将回归用户手中，突破Web2模式中数字资产控制权多在服务提供商手中的局限，从而增强用户的自由和隐私。
+![ChangeOfHope]('./img/ChangeOfHope.png')
 
 ## Innovations
 Returning Asset Ownership to Users: Beyond membership NFTs, we aim to return the ownership of user assets such as articles, music, photos, and videos back to the users.
