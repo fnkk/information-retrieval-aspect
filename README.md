@@ -6,7 +6,7 @@ An idea of Artela aspect use case.
 
 ### 资产多样化与Web2的局限性
 我们追求的不仅是会员NFT，还包括用户的其他资产，如文章、音乐、图片、视频等。这些资产的所有权也将回归用户手中，突破Web2模式中数字资产控制权多在服务提供商手中的局限，从而增强用户的自由和隐私。
-![ChangeOfHope]('./img/ChangeOfHope.png')
+![ChangeOfHope](./img/ChangeOfHope.png)
 
 ## Innovations
 Returning Asset Ownership to Users: Beyond membership NFTs, we aim to return the ownership of user assets such as articles, music, photos, and videos back to the users.
