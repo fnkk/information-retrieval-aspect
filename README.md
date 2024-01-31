@@ -1,26 +1,33 @@
 # information-retrieval-aspect
 An idea of Artela aspect use case.
 ## Project Background
-### 会员资产化与数据去中心化
-受到会员模式的启发，我们将会员资格视为用户购买的一种资产，其价值在于能够获取更多服务。在传统APP模式中，会员数据多存储于中心化的服务器，我们的目标是颠覆这一模式，将资产的所有权和数据的控制权交还给用户，确保其自主性和安全性。
+### Membership Assetization and Data Decentralization
+Inspired by the membership model, we view membership as an asset purchased by users, with its value reflected in access to enhanced services. Contrary to the traditional centralized storage of member data in apps, our goal is to revolutionize this approach by transferring both asset ownership and data control back to the users, ensuring autonomy and security.
 
-### 资产多样化与Web2的局限性
-我们追求的不仅是会员NFT，还包括用户的其他资产，如文章、音乐、图片、视频等。这些资产的所有权也将回归用户手中，突破Web2模式中数字资产控制权多在服务提供商手中的局限，从而增强用户的自由和隐私。
+### Asset Diversification and the Limitations of Web2
+Our ambition extends beyond just membership NFTs to include a variety of user assets such as articles, music, photos, and videos. The ownership of these assets will also revert to users, breaking free from the Web2 paradigm where control over digital assets predominantly lies with service providers, thus enhancing user freedom and privacy.
 ![ChangeOfHope](./img/ChangeOfHope.png)
 
 ## Innovations
-Returning Asset Ownership to Users: Beyond membership NFTs, we aim to return the ownership of user assets such as articles, music, photos, and videos back to the users.
-Building a Future Web3 Application Ecosystem: In this ecosystem, data belongs to the users. Applications can only access this data with the user's consent, achieving a truly decentralized data management and service experience.
-# Technical Implementation
-To achieve the above objectives, we have designed the following two main technical components:
+- Returning Asset Ownership to Users: We aim to restore the ownership of diverse user assets, including articles, music, photos, and videos, to the individuals themselves.
+- Building a Future Web3 Application Ecosystem: In this ecosystem, data ownership resides with the users. Applications can access this data only with the user's explicit consent, leading to a truly decentralized approach in data management and service experience.
+## Implementation
+1. Personal Data Storage Contract:
+    - This contract allows users to register their assets, such as NFT contract addresses, making them queryable by applications.
+    - Users can record and store their digital assets (e.g., articles, videos) directly on the blockchain or via IPFS hashes, adhering to specific protocols for accessibility by various applications.
+    - The contract enables users to grant or revoke authorization of their assets to specific Dapps.
+2. Information-Retrieval-Aspect Implementation：
+    - This aspect is linked to the personal data storage contract. Application-level Dapps can bind to this aspect. Upon initialization, Dapps call the information-retrieval-aspect to retrieve data assets authorized for that Dapp, allowing for normal data display.
+    - The aspect can monitor changes in data authorization in the personal data storage contract and immediately relay these changes to the Dapp.
+3. Application-Level Dapp Implementation：
 
-1. Personal Data Storage Contract (Contract 1)
-Asset Registration: Users can register their assets, including NFTs and contract addresses, through Contract 1, making them queryable by different applications.
-Asset Recording: Users can record their digital assets, such as published articles or videos. These assets can be fully on-chain or stored as IPFS hashes, while following specific protocols for access by different applications.
-Asset Authorization Management: Users can authorize or revoke authorization of their assets to specific Dapps through Contract 1.
-2. Application-Level Dapp Implementation
-Creator and Viewer Interaction: Creators authorize their asset information to Contract 1, allowing Dapps to display this information; viewers can access these contents through Dapps.
-## Application Examples:
-DeFi Platforms: Upon login, if a user's assets include a membership NFT issued by a specific DeFi platform, the user may enjoy additional benefits.
-Decentralized Forums: By binding to Contract 1 to retrieve user-authorized articles, forums can publish these articles for other users to read.
-Through this approach, we not only enhance the autonomy and security of user assets but also lay the foundation for building a decentralized application ecosystem.
+- Creators authorize their content through the personal data storage contract, and Dapps display this content. Viewers can access these contents via the Dapp.
+ 1. On DeFi platforms, after user login, the system checks whether the user's assets include the platform's membership NFT, enabling access to premium features.
+ 2. Decentralized forums can publish user-authorized articles, making them accessible to other users.
+ 3. More other Dapps....
+ ![RelationDiagram](./img/RelationDiagram.png)
+## The value that this Aspect brings to the Artela Ecosystem And Further Possibilities
+1. Creator Economic Incentives: Track the original creators based on application-level Dapp viewership and provide them with novel creative incentives.
+2. Building a Future Web3 Application Ecosystem: In this ecosystem, data is entirely owned by users. Applications can access this data only with user authorization, achieving a truly decentralized data management and service experience.
+3. Enhancing NFT Usability: Through an authorization mechanism, users can utilize their image NFTs as avatars, music NFTs as background music, etc., increasing the practical value of NFTs.
+4. Cross-Chain Functionality of Aspect: The cross-chain binding and query functionality will enable digital assets to be applied and transferred across different blockchains.
